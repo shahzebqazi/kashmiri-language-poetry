@@ -153,29 +153,11 @@ cite {
   margin-bottom: 0.35rem;
 }
 
-.hero-tagline {
-  font-family: var(--font-ui);
-  font-style: italic;
-  font-size: 1.1rem;
-  color: #3a3a3a;
-  margin: 0;
-}
-
 /* Landing page (index.html): art used sparingly */
 .hero--home {
   background-color: var(--bg-parchment);
   background-image: none;
   min-height: min(50vh, 400px);
-}
-
-.hero--home::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("../assets/img/pattern-kashmir-textile.png") center / 520px repeat;
-  opacity: 0.055;
-  pointer-events: none;
-  z-index: 0;
 }
 
 .hero--home::after {
@@ -203,20 +185,44 @@ cite {
   justify-content: flex-end;
 }
 
-.hero-mark {
+/* Clip to rounded square; solid backing hides export checkerboard outside art */
+.hero-mark-inner {
   width: 36px;
   height: 36px;
-  object-fit: contain;
+  border-radius: 22%;
+  overflow: hidden;
+  background-color: var(--bg-parchment);
   display: block;
-  opacity: 0.92;
+  flex-shrink: 0;
 }
 
-.hero-emblem {
-  width: min(96px, 22vw);
-  height: auto;
+.hero-mark-inner .hero-mark {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   display: block;
+  opacity: 0.95;
+}
+
+/* Circular clip: corner checkers in square PNG fall outside the circle */
+.hero-emblem-wrap {
+  width: min(96px, 22vw);
+  height: min(96px, 22vw);
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--bg-parchment);
   margin: 0 auto 1.25rem;
-  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.hero-emblem-wrap .hero-emblem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .hero--home .hero-inner h1 {
