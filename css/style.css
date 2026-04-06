@@ -153,18 +153,20 @@ cite {
   margin-bottom: 0.35rem;
 }
 
-/* Landing page (index.html): art used sparingly */
+/* Landing page (index.html): saffron crocus hero */
 .hero--home {
-  background-color: var(--bg-parchment);
-  background-image: none;
-  min-height: min(50vh, 400px);
+  background-color: #3d2a1f;
+  background-image: url("../assets/img/hero-saffron.jpg");
+  background-size: cover;
+  background-position: center 42%;
+  min-height: min(52vh, 440px);
 }
 
 .hero--home::after {
   background: linear-gradient(
     to bottom,
-    rgba(252, 250, 250, 0.25) 0%,
-    rgba(252, 250, 250, 0.88) 72%,
+    rgba(30, 22, 18, 0.45) 0%,
+    rgba(252, 250, 250, 0.82) 78%,
     var(--bg-parchment) 100%
   );
   z-index: 1;
@@ -227,6 +229,37 @@ cite {
 
 .hero--home .hero-inner h1 {
   text-shadow: 0 1px 3px rgba(252, 250, 250, 0.9);
+}
+
+.hero--home .site-title.script-rtl {
+  font-family: var(--font-script);
+  font-size: clamp(2.35rem, 7vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 0.25rem;
+}
+
+.site-subtitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.05rem, 2.4vw, 1.4rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-charcoal);
+  margin: 0.35rem 0 0;
+  letter-spacing: 0.03em;
+  text-shadow: 0 1px 3px rgba(252, 250, 250, 0.95);
+}
+
+.site-footer-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  margin: 0 0 0.35rem;
+}
+
+.site-footer .attribution {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
 }
 
 /* Site header (interior pages) */
