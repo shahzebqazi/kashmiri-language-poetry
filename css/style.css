@@ -431,6 +431,105 @@ dl.glossary dd {
   padding-left: 0;
 }
 
+/* Ghazal glossary: scansion & extended examples */
+.page-toc {
+  margin: 1.5rem 0 2rem;
+  padding: 1rem 1.25rem;
+  background: rgba(125, 0, 0, 0.04);
+  border-left: 3px solid var(--accent-chinar);
+  font-size: 0.98rem;
+}
+
+.page-toc ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.page-toc a {
+  border-bottom: none;
+}
+
+.page-toc a:hover {
+  border-bottom: 1px solid var(--accent-chinar);
+}
+
+.lede {
+  font-size: 1.02rem;
+  margin-bottom: 1.5rem;
+}
+
+.scan-example {
+  margin: 2rem 0;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid #e5e0db;
+}
+
+.scan-example:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.scan-example h3 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  margin: 0 0 1rem;
+  color: var(--accent-chinar);
+}
+
+.scan-label {
+  font-family: var(--font-ui);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0.75rem 0 0.25rem;
+}
+
+.taqti,
+.rhythm-line {
+  font-family: ui-monospace, "Cascadia Code", Menlo, monospace;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  margin: 0 0 0.35rem;
+  color: #2a2a2a;
+  word-break: break-word;
+}
+
+.ur-line {
+  margin: 0 0 0.35rem;
+}
+
+.translit-line {
+  margin: 0 0 0.75rem;
+  font-style: italic;
+  color: #444;
+}
+
+section.ghazal-notes {
+  margin-top: 3rem;
+}
+
+ol.ghazal-numbered {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+}
+
+ol.ghazal-numbered > li {
+  margin: 2rem 0;
+  padding-left: 0.35rem;
+}
+
+ol.ghazal-numbered > li::marker {
+  font-weight: 600;
+  color: var(--accent-chinar);
+}
+
+.note-editorial {
+  font-size: 0.92rem;
+  color: #555;
+  margin: 0.75rem 0 0;
+  font-style: italic;
+}
+
 /* Responsive: stack bilingual */
 @media (max-width: 767px) {
   .bilingual {
