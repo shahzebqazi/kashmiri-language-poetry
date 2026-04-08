@@ -8,7 +8,10 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: '/kashmiri-language-poetry'
+			base: '/kashmiri-language-poetry',
+			// Root-relative /kashmiri-language-poetry/_app/... so JS/CSS work on both
+			// /repo/page and /repo/page/ (GitHub Pages trailing-slash quirks).
+			relative: false
 		},
 		prerender: {
 			handleMissingId: 'warn',
