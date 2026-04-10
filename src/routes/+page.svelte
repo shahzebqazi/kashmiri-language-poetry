@@ -24,6 +24,7 @@
 	<nav aria-label="Primary">
 		<ul class="nav-grid">
 			<li><a href={`${base}/basics`}>The basics — object writing</a></li>
+			<li><a href={`${base}/verbs`}>Kashmiri verbs &amp; related vocabulary</a></li>
 			<li><a href={`${base}/ghazals`}>Ghazal glossary &amp; metre</a></li>
 			<li><a href={`${base}/poets/ghalib`}>Mirza Asadullah Khan Ghalib</a></li>
 			<li><a href={`${base}/poets/mir`}>Mir Taqi Mir</a></li>
