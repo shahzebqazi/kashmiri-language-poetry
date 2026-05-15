@@ -8,8 +8,8 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: '/kashmiri-language-poetry',
-			// Root-relative /kashmiri-language-poetry/_app/... so JS/CSS work on both
+			base: '/gulrez-org-kashmiri-language',
+			// Root-relative /gulrez-org-kashmiri-language/_app/... so JS/CSS work on both
 			// /repo/page and /repo/page/ (GitHub Pages trailing-slash quirks).
 			relative: false
 		},
